@@ -1,0 +1,44 @@
+{
+  "name": "webrtc-rdp-app",
+  "version": "0.0.5",
+  "description": "WebRTC RDP application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start-debug": "electron . --debug",
+    "prepare": "npx electron-rebuild",
+    "build-win": "npx electron-builder --win --x64",
+    "build-mac": "npx electron-builder --mac --x64 --dir",
+    "build-mac-arm64": "npx electron-builder --mac --arm64 --dir"
+  },
+  "repository": "https://github.com/binzume/webrtc-rdp",
+  "keywords": [
+    "WebRTC",
+    "RemoteDesktop",
+    "Electron"
+  ],
+  "author": "binzume",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/rebuild": "^3.2.10",
+    "electron": "^19.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "@open-ayame/ayame-web-sdk": "^2022.1.0",
+    "karakurijs": "^0.0.4"
+  },
+  "build": {
+    "appId": "net.binzume.webrtc-rdp",
+    "productName": "WebRTC Remote Desktop",
+    "npmRebuild": false,
+    "files": [
+      "!**/*.{vcxproj,ilk,exp,lib,tlog,ts,c,cc,mm,h}",
+      "!**/.*",
+      "!node_modules/karakurijs/karakurijs-*",
+      "!node_modules/ffi-napi/{deps,src,bin,prebuilds,build/deps}",
+      "!node_modules/ref-napi/{docs,include}",
+      "!**/node-addon-api/*"
+    ]
+  }
+}
