@@ -295,7 +295,7 @@ class PlayerConnection extends BaseConnection {
 
 AFRAME.registerComponent('webrtc-rdp', {
 	schema: {
-		signalingUrl: { default: `wss://103.167.89.178:3000/signaling` },
+		signalingUrl: { default: `wss://sigalingwebrtc.win2kvn.com:3000/signaling` },
 		roomId: { default: "" },
 		streamId: { default: "" },
 		maxWidth: { default: 8 },
