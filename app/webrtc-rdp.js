@@ -2,7 +2,7 @@
 'use strict';
 
 // Please replace with your id and signalingKey!
-const signalingUrl = `wss://sigalingwebrtc.win2kvn.com:3000/signaling`;
+const signalingUrl = `wss://signalingwebrtc.win2kvn.com:3000/signaling`;
 const signalingKey = 'VV69g7Ngx-vNwNknLhxJPHs9FpRWWNWeUzJ9FUyylkD_yc_F';
 const roomIdPrefix = 'binzume@rdp-room-';
 const roomIdPinPrefix = 'binzume@rdp-pin-';
